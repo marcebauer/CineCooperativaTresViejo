@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>568</x><y>0</y><w>168</w><h>152</h></coordinates><panel_attributes>Usuario
+--
+-nombre:String
+-apellido: String
+-email: String
+-contrasenia: String
+-fechaDeNacimiento: Date
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>328</x><y>304</y><w>168</w><h>152</h></coordinates><panel_attributes>Pelicula
+--
+-titulo:String
+-fechaDeEstreno: Date
+-fechaDeDesplazamiento: Date
+-duracion:int
+-mediaPaths: ArrayList&lt;String&gt;
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>312</x><y>0</y><w>168</w><h>152</h></coordinates><panel_attributes>Funcion
+--
+-dia: String
+-horaDeInicio: String
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>576</x><y>304</y><w>168</w><h>152</h></coordinates><panel_attributes>Entrada
+--
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>304</y><w>168</w><h>152</h></coordinates><panel_attributes>Asiento
+--
+-fila:int
+-numeroDeAsiento: int
+-estaLibre: boolean
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>656</x><y>144</y><w>72</w><h>176</h></coordinates><panel_attributes>lt=&lt;-
+0..*
+- entradas</panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>64</y><w>184</w><h>256</h></coordinates><panel_attributes>lt=&lt;-
+1..n
+- asientos</panel_attributes><additional_attributes>10;300;10;10;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>144</y><w>64</w><h>176</h></coordinates><panel_attributes>lt=&lt;-
+1..1
+- pelicula</panel_attributes><additional_attributes>10;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>96</y><w>120</w><h>248</h></coordinates><panel_attributes>lt=&lt;-
+1..1
+- funcion</panel_attributes><additional_attributes>10;10;70;10;70;290;130;290</additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>448</y><w>536</w><h>96</h></coordinates><panel_attributes>lt=&lt;-
+1.1
+- asiento</panel_attributes><additional_attributes>10;10;10;90;650;100;650;10</additional_attributes></element></diagram>
