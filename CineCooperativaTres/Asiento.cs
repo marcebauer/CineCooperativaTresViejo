@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CineCooperativaTresUwu
+namespace CineCooperativaTres
 {
     class Asiento
     {
