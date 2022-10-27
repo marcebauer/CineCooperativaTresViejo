@@ -9,10 +9,9 @@ namespace CineCooperativaTres
 	{
 		public DbSet<Pelicula> Pelicula { get; set; }
 		
-		protected override void OnConfiguring(DbContextOptioinsBuilder optioinsBuilder)
+		protected override void OnConfiguring(DbContextOptionsBuilder optioinsBuilder)
 		{
-			optioinsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=SchoolDBCF
-;Trusted_Connection=True;"));
+			optioinsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=Cine;Trusted_Connection=True;");
 		}
 	}
 }
